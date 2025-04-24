@@ -9,7 +9,7 @@ import {
 } from './definitions';
 import { formatCurrency } from './utils';
 
-const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
+const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' }); // ssl a protocol that encrypts data transmitted between a web server and a web browser, ensuring secure communication
 
 export async function fetchRevenue() {
   try {
